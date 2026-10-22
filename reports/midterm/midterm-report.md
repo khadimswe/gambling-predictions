@@ -30,6 +30,10 @@ proposal's baseline (always predict a home win) and a bookmaker reference.
 ## 2. Data
 
 **Source.** We used football-data.co.uk, which the proposal named as the fallback source.
+We switched from Kaggle because its database needs a Kaggle account to download and stores
+shot and possession statistics as XML text inside a SQLite file, while football-data.co.uk
+has plain CSV files our code downloads automatically, so either of us can rebuild the data
+with one command.
 We took the five largest leagues in the Kaggle European Soccer Database over the same
 seasons (Premier League, La Liga, Bundesliga, Serie A, Ligue 1; 2008/09 to 2015/16).
 football-data.co.uk has per-match shots, shots on target, corners, fouls, and cards as
