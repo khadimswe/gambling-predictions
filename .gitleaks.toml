@@ -1,0 +1,13 @@
+# Secret scanning config. Runs in CI (full history) and as a pre-commit hook (staged changes).
+# Docs: https://github.com/gitleaks/gitleaks#configuration
+title = "gambling-predictions"
+
+[extend]
+useDefault = true
+
+[[allowlists]]
+description = "Local environments and downloaded match data are never committed"
+paths = [
+  '''^\.venv/''',
+  '''^data/(raw|processed)/''',
+]

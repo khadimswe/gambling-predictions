@@ -1,0 +1,51 @@
+{
+  "leagues": [
+    "Premier League",
+    "La Liga",
+    "Bundesliga",
+    "Serie A",
+    "Ligue 1"
+  ],
+  "seasons": [
+    "2008/09",
+    "2009/10",
+    "2010/11",
+    "2011/12",
+    "2012/13",
+    "2013/14",
+    "2014/15",
+    "2015/16"
+  ],
+  "n_matches_clean": 14604,
+  "n_matches_with_features": 13883,
+  "matches_by_split": {
+    "train": 10365,
+    "test": 1760,
+    "val": 1758
+  },
+  "n_training_snapshots": 21056,
+  "result_rates_train": {
+    "H": 0.4675,
+    "A": 0.2771,
+    "D": 0.2554
+  },
+  "rolling_window": 10,
+  "min_prior_matches": 5,
+  "n_tiers": 3,
+  "tier_vs_final_points_spearman": {
+    "per_league_season": {
+      "D1_1415": -0.832,
+      "D1_1516": -0.706,
+      "E0_1415": -0.93,
+      "E0_1516": -0.817,
+      "F1_1415": -0.737,
+      "F1_1516": -0.737,
+      "I1_1415": -0.872,
+      "I1_1516": -0.883,
+      "SP1_1415": -0.962,
+      "SP1_1516": -0.832
+    },
+    "mean": -0.831
+  },
+  "seed_agreement": 0.9957
+}

@@ -1,0 +1,5 @@
+window,min_prior_matches,val_pair_table_log_loss,val_tier_rule_accuracy,n_val
+5,3,1.0236,0.4944,1786
+10,5,1.007,0.5165,1758
+15,5,1.0081,0.5154,1758
+20,5,1.0049,0.5142,1758

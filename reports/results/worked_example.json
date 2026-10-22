@@ -1,0 +1,155 @@
+{
+  "match_id": "E0_1516_20160206_ManCity",
+  "date": "2016-02-06",
+  "league": "Premier League",
+  "season": "2015/16",
+  "home": {
+    "team": "Man City",
+    "form": {
+      "form_ppg": 1.8,
+      "form_goals_for": 1.6,
+      "form_goals_against": 0.9,
+      "form_shots_for": 16.1,
+      "form_shots_against": 9.8,
+      "form_sot_for": 4.8,
+      "form_sot_against": 3.6,
+      "form_corners_for": 6.5,
+      "form_corners_against": 4.0
+    },
+    "league_mean": {
+      "form_ppg": 1.384,
+      "form_goals_for": 1.372,
+      "form_goals_against": 1.356,
+      "form_shots_for": 12.64,
+      "form_shots_against": 12.574,
+      "form_sot_for": 4.195,
+      "form_sot_against": 4.171,
+      "form_corners_for": 5.574,
+      "form_corners_against": 5.546
+    },
+    "league_std": {
+      "form_ppg": 0.543,
+      "form_goals_for": 0.533,
+      "form_goals_against": 0.481,
+      "form_shots_for": 2.636,
+      "form_shots_against": 2.552,
+      "form_sot_for": 1.082,
+      "form_sot_against": 0.961,
+      "form_corners_for": 1.254,
+      "form_corners_against": 1.281
+    },
+    "z": {
+      "form_ppg": 0.766,
+      "form_goals_for": 0.427,
+      "form_goals_against": -0.948,
+      "form_shots_for": 1.312,
+      "form_shots_against": -1.087,
+      "form_sot_for": 0.559,
+      "form_sot_against": -0.594,
+      "form_corners_for": 0.738,
+      "form_corners_against": -1.207
+    },
+    "squared_distance_to_tier": {
+      "1": 1.86,
+      "2": 6.246,
+      "3": 23.074
+    },
+    "tier": 1
+  },
+  "away": {
+    "team": "Leicester",
+    "form": {
+      "form_ppg": 2.1,
+      "form_goals_for": 1.5,
+      "form_goals_against": 0.5,
+      "form_shots_for": 11.9,
+      "form_shots_against": 14.1,
+      "form_sot_for": 4.2,
+      "form_sot_against": 3.5,
+      "form_corners_for": 4.8,
+      "form_corners_against": 7.7
+    },
+    "league_mean": {
+      "form_ppg": 1.384,
+      "form_goals_for": 1.372,
+      "form_goals_against": 1.356,
+      "form_shots_for": 12.64,
+      "form_shots_against": 12.574,
+      "form_sot_for": 4.195,
+      "form_sot_against": 4.171,
+      "form_corners_for": 5.574,
+      "form_corners_against": 5.546
+    },
+    "league_std": {
+      "form_ppg": 0.543,
+      "form_goals_for": 0.533,
+      "form_goals_against": 0.481,
+      "form_shots_for": 2.636,
+      "form_shots_against": 2.552,
+      "form_sot_for": 1.082,
+      "form_sot_against": 0.961,
+      "form_corners_for": 1.254,
+      "form_corners_against": 1.281
+    },
+    "z": {
+      "form_ppg": 1.319,
+      "form_goals_for": 0.24,
+      "form_goals_against": -1.779,
+      "form_shots_for": -0.281,
+      "form_shots_against": 0.598,
+      "form_sot_for": 0.004,
+      "form_sot_against": -0.698,
+      "form_corners_for": -0.617,
+      "form_corners_against": 1.681
+    },
+    "squared_distance_to_tier": {
+      "1": 16.687,
+      "2": 9.959,
+      "3": 14.639
+    },
+    "tier": 2
+  },
+  "tier_diff": 1,
+  "tier_rule_prediction": "H",
+  "tier_pair_probabilities": {
+    "H": 0.687,
+    "D": 0.2,
+    "A": 0.113
+  },
+  "actual_result": "A",
+  "centroids_z": {
+    "1": {
+      "form_ppg": 1.276,
+      "form_goals_for": 1.245,
+      "form_goals_against": -0.861,
+      "form_shots_for": 1.225,
+      "form_shots_against": -0.975,
+      "form_sot_for": 1.309,
+      "form_sot_against": -0.98,
+      "form_corners_for": 0.869,
+      "form_corners_against": -0.789
+    },
+    "2": {
+      "form_ppg": -0.063,
+      "form_goals_for": -0.151,
+      "form_goals_against": -0.079,
+      "form_shots_for": 0.004,
+      "form_shots_against": -0.218,
+      "form_sot_for": -0.058,
+      "form_sot_against": -0.201,
+      "form_corners_for": 0.063,
+      "form_corners_against": -0.201
+    },
+    "3": {
+      "form_ppg": -0.698,
+      "form_goals_for": -0.567,
+      "form_goals_against": 0.627,
+      "form_shots_for": -0.753,
+      "form_shots_against": 0.874,
+      "form_sot_for": -0.725,
+      "form_sot_against": 0.855,
+      "form_corners_for": -0.611,
+      "form_corners_against": 0.738
+    }
+  }
+}
