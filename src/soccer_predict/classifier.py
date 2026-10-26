@@ -33,10 +33,38 @@ def feature_columns(use_tiers: bool = True) -> list[str]:
 def make_model(kind: str = "logreg", **params: Any) -> Any:
     """Return an unfitted scikit-learn estimator (ideally a Pipeline).
 
-    TODO(Ryann): spec step 2. Suggested kinds:
-      "logreg": StandardScaler + LogisticRegression (multinomial is the default)
-      "rf":     RandomForestClassifier
+    "logreg": scale the features, then fit multinomial Logistic Regression.
+              Scaling matters here because shots (~13) and points per game (~1.4)
+              are on very different scales, and Logistic Regression is sensitive
+              to that.
+    "rf":     Random Forest. Trees split on raw values, so no scaling needed.
     """
+    if kind == "logreg":
+        from sklearn.linear_model import LogisticRegression
+        from sklearn.pipeline import Pipeline
+        from sklearn.preprocessing import StandardScaler
+
+        return Pipeline(
+            [
+                ("scaler", StandardScaler()),
+                ("logreg", LogisticRegression(max_iter=1000, **params)),
+            ]
+        )
+
+    if kind == "rf":
+        from sklearn.ensemble import RandomForestClassifier
+
+        from soccer_predict import config
+
+        rf_params = {
+            "n_estimators": 500,
+            "min_samples_leaf": 5,
+            "n_jobs": -1,
+            "random_state": config.RANDOM_SEED,
+        }
+        rf_params.update(params)  # let a caller override any default
+        return RandomForestClassifier(**rf_params)
+
     raise NotImplementedError(
         f"make_model({kind!r}) is not built yet; see docs/specs/ryann-classifier.md step 2"
     )
